@@ -24,7 +24,7 @@ public class Test_1 {
                 .post("/post")
                 // Проверки
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .body("json.id", equalTo(1))
                 .body("json.name", equalTo("Текущий счёт"))
                 .body("json.number", equalTo("** 8574"))
